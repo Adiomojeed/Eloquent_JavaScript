@@ -12,3 +12,6 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
     * Fizz Buzz
     * Chess Board
 ###### Functions
+    * Minimum
+    * Recursion
+    * Bean Counting
