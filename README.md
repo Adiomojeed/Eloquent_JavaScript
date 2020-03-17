@@ -15,3 +15,5 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
     * Minimum
     * Recursion
     * Bean Counting
+###### Data Structures: Objects and Arrays
+    * Range
