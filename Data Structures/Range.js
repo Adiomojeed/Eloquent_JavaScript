@@ -28,7 +28,7 @@ console.log(range(5,20,5)) // Returns [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1
 function sumOfArray (x) {
     let sum = 0
     for (let j = 0; j <= x.length; j++) {
-        sum += x[j]
+        sum += j
     }
     return sum
 }

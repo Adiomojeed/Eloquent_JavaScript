@@ -3,6 +3,7 @@
     function should accept a single parameter (a positive, whole number) and return
     a Boolean.
  */
+
 function isEven ( value ) {
    if ( value === 0 ) {
        return true
@@ -18,5 +19,5 @@ function isEven ( value ) {
    }
 } 
 
-isEven(6) // true
-isEven(-63)  // false
+console.log(isEven(6)) // true
+console.log(isEven(-63))  // false
