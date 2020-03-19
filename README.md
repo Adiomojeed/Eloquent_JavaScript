@@ -22,3 +22,6 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
     * Deep Equal
 ###### Higher Order functions
     * Flattening
+###### Secret Life of Objects
+    * Vector
+    * Groups
