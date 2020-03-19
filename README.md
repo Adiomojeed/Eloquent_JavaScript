@@ -17,3 +17,8 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
     * Bean Counting
 ###### Data Structures: Objects and Arrays
     * Range
+    * Reverse Array
+    * List
+    * Deep Equal
+###### Higher Order functions
+    * Flattening
