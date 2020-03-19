@@ -4,13 +4,12 @@
  */
 
 function arrayToList (x) {
-    var list = {y: 'a'}
-    for (let i = 0; i <= x.length; i++) {
-        Object.assign(list, {i})  
-    }
+    let list = null
+    // x.forEach(a => s[] = a)
+    for (let i = x.length - 1; i >= 0; i--) {
+        list = {value: x[i], rest: list}
+    } 
     return list
-    
 }
-console.log(arrayToList([1,2,3,4]))
-var x = {'a': 1, 'b': 2}
-console.log(typeof(x))
+
+console.log(arrayToList([1,2,3,4,5]))
