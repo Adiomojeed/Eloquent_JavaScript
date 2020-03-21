@@ -25,3 +25,6 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
 ###### Secret Life of Objects
     * Vector
     * Groups
+###### Bugs and Errors
+    * Retry
+    * Locked Box
