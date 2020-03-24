@@ -1,0 +1,20 @@
+/xxxx/.test('yyyyy') xxxx is the condition to test and 'yyyy; is where we are testing the conditions
+Note: While testing using .test(), all of the conditions must be met if condition is open, i.e, no square bracket
+/[xxx]/.test('yyy'):  at least, one of the conditions must be met
+Other conditions are /d, /w, /s, /D, /W, /S which are assumed to be inside a square bracket
+^: This is used to match for conditions except the one preceded by ^, i.e, string must have other characters apart from
+those in the set. Meaning not-conditions
+Patterns in expressions folllowed by '+' means elements may be repeated ore that one (>= 1)
+Patterns in expressions followed by '*' means (>= 0)
+Patterns in expressions followed by '?' means they can occur in the string or not
+Patterns in expressions followed by '{x}' means strings must contain matching character at least x times
+Adding 'i' at the end of an expression makes it case-insensitive
+.test() only check if conditions matches or not. Another method that can be used is .exec() which gives null if not matched
+and an object describing the match, if found. Note: It works for only the first match
+Having '+' or '*' in the expression tests for first match group
+/''/: This tests for quotes
+'^' and '$' are known markers. '^' starts a string and '$' ends a string
+'\b' is used to check an expression if it starts or end the string. /\bas/ checks the beginning and /as\b/ checks the end
+.replace() is used to change values. The first argument is what to change and the second argument is what to change to.
+Regular expression can also be used as first argument but matches only the first occurence but if we want effect to take place
+in al occurences, we add 'g', meaning global
