@@ -29,4 +29,6 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
     * Retry
     * Locked Box
 ###### Regular Expression
+    * RegExp golf
     * Quoting Style
+    * JavaScript numbers matching

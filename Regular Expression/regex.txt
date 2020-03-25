@@ -18,3 +18,15 @@ Having '+' or '*' in the expression tests for first match group
 .replace() is used to change values. The first argument is what to change and the second argument is what to change to.
 Regular expression can also be used as first argument but matches only the first occurence but if we want effect to take place
 in al occurences, we add 'g', meaning global
+
+
+
+long press power button
+long press power off
+click ok
+android setting > users > guest account <> owner account > reboot -> normal mode
+
+or if thrown back to owner account
+
+set a screen lock
+empty device and reboot
