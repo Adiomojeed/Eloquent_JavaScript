@@ -23,10 +23,10 @@ const roads = [
 ];
 
 // Creates possible destinations of each location
-function buildGraph (edges) {
+function buildGraph(edges) {
     let graph = Object.create(null)
     let newEdges = edges.map(x => x.split('-'))
-    function addEdges (from, to) {
+    function addEdges(from, to) {
         if (graph[from] == null) {
             graph[from] = [to]
         }
@@ -51,21 +51,21 @@ class villageState {
         this.parcels = parcels
     }
 
-    move (destination) {
+    move(destination) {
         if (!roadGraph[this.place].includes(destination)) {
             return this
         }
         else {
             let parcels = this.parcels.map(p => {
                 if (p.place != this.place) return p
-                return {place: destination, address: p.address}
+                return { place: destination, address: p.address }
             }).filter(p => p.place != p.address)
             return new villageState(destination, parcels)
         }
     }
 }
 
-let first = new villageState('Post Office', [{palce: 'Post Office', address: "Alice's House"}])
+let first = new villageState('Post Office', [{ palce: 'Post Office', address: "Alice's House" }])
 
 let next = first.move("Alice's House")
 console.log(next.place)

@@ -34,3 +34,7 @@ code can be accessed on [Eloquent JavaScript](https://eloquentjavascript.net/cod
     * JavaScript numbers matching
 ###### Modules
     * Road Module
+###### JavaScript and the Browser
+###### Document Object Model
+    * Build a table
+    * Elements by Tag Names

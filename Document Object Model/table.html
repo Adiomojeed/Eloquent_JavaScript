@@ -1,0 +1,56 @@
+<!--
+    Given a data set of mountains, an array of objects with name , height , and
+place properties, generate the DOM structure for a table that enumerates the
+objects. It should have one column per key and one row per object, plus a
+header row with <th> elements at the top, listing the column names.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mountains"></div>
+    <script>
+        let mountObj = [
+            {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+            {name: "Everest", height: 8848, place: "Nepal"},
+            {name: "Mount Fuji", height: 3776, place: "Japan"},
+            {name: "Vaalserberg", height: 323, place: "Netherlands"},
+            {name: "Denali", height: 6168, place: "United States"},
+            {name: "Popocatepetl", height: 5465, place: "Mexico"},
+            {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+        ];        
+        let mountains = document.getElementById('mountains')
+        let table = document.createElement('table')
+        let tableRow = document.createElement('tr')
+        
+        let data = Object.keys(mountObj[0])
+        data.map(x => {
+            let tableDesc = document.createElement('td')
+            let text = document.createTextNode(x.toUpperCase())
+            tableDesc.appendChild(text)
+            tableRow.appendChild(tableDesc)
+        })
+        table.appendChild(tableRow)
+        mountObj.map(y => {
+            let row = document.createElement('tr')
+            let j = Object.values(y)
+            j.map(z => {
+                let tableDesc = document.createElement('td')
+                let text = document.createTextNode(z)
+                tableDesc.appendChild(text)
+                row.appendChild(tableDesc)
+                if (typeof z == 'number') {
+                    tableDesc.setAttribute('style', 'text-align: right')
+                }
+            })
+            table.appendChild(row)
+        })
+        mountains.appendChild(table)
+    </script>
+</body>
+</html>

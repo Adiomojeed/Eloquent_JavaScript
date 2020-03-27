@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading with a <span>span</span> element.</h1>
+    <p>A paragraph with <span>one</span>, <span>two</span> spans.</p>
+    <script>
+        function byTagName (node, tagName) {
+            let x = []
+            function check (node) {
+                for (let i = 0; i < node.childNodes.length; i++) {
+                let a = node.childNodes[i]
+                if (a.nodeType == document.ELEMENT_NODE) {
+                    if (a.nodeName.toLowerCase() == tagName) {
+                        x.push(a)    
+                    }
+                    check(a)
+                }
+                
+            }
+            b(node)
+            return x
+        }
+        console.log(byTagName(document.body, 'span').length)
+    </script>
+</body>
+</html>
