@@ -13,14 +13,14 @@
             let x = []
             function check (node) {
                 for (let i = 0; i < node.childNodes.length; i++) {
-                let a = node.childNodes[i]
-                if (a.nodeType == document.ELEMENT_NODE) {
-                    if (a.nodeName.toLowerCase() == tagName) {
-                        x.push(a)    
+                    let a = node.childNodes[i]
+                    if (a.nodeType == document.ELEMENT_NODE) {
+                        if (a.nodeName.toLowerCase() == tagName) {
+                            x.push(a)    
+                        }
+                        check(a)
                     }
-                    check(a)
                 }
-                
             }
             b(node)
             return x
