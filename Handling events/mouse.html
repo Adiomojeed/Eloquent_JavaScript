@@ -13,7 +13,7 @@
     <style>
         .movement {
             position: absolute;
-            background-color: indigo;
+            background-color: teal;
             width: 4px;
             height: 4px;
             border-radius: 50%;
@@ -23,7 +23,7 @@
 <body>
     <script>
         let array = []
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 1000; i++) {
             let dot = document.createElement('div')
             dot.setAttribute('class', 'movement')
             document.body.appendChild(dot)
@@ -34,7 +34,7 @@
             let a = array[b]
             a.style.left = window.pageX + 'px'
             a.style.top = window.pageY + 'px'
-            b = (b+1) % 20
+            b = (b+1) % 1000
         })
     </script>
 </body>
