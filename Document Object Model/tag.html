@@ -1,3 +1,9 @@
+<!--
+    The document.getElementsByTagName method returns all child elements with a given tag name. Implement your own version of this 
+    as a function that takes a node and a string (the tag name) as arguments and returns an array containing all descendant element 
+    nodes with the given tag name.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +28,7 @@
                     }
                 }
             }
-            b(node)
+            check(node)
             return x
         }
         console.log(byTagName(document.body, 'span').length)

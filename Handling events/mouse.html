@@ -1,0 +1,41 @@
+<!--
+    In this exercise, I want you to implement a mouse trail. Use absolutely positioned <div> elements with a fixed size and 
+    background color (refer to the code in the “Mouse Clicks” section for an example). Create a bunch of such elements and, 
+    when the mouse moves, display them in the wake of the mouse pointer.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Trail</title>
+    <style>
+        .movement {
+            position: absolute;
+            background-color: indigo;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let array = []
+        for (let i = 0; i < 20; i++) {
+            let dot = document.createElement('div')
+            dot.setAttribute('class', 'movement')
+            document.body.appendChild(dot)
+            array.push(dot)
+        }
+        let b = 0
+        window.addEventListener('mousemove', (window) => {
+            let a = array[b]
+            a.style.left = window.pageX + 'px'
+            a.style.top = window.pageY + 'px'
+            b = (b+1) % 20
+        })
+    </script>
+</body>
+</html>
